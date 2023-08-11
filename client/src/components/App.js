@@ -31,7 +31,7 @@ const App = () => {
   };
 
   const handleSubmit = async () => {
-    const response = await fetch('http://localhost:8080/insertData', {
+    const response = await fetch('http://localhost:8081/insertData', {
       method: 'POST',
       body: JSON.stringify({ selectedMovie, selectedSlot, seatData }),
       headers: {
@@ -48,7 +48,7 @@ const App = () => {
 
   const handleRecord = async () => {
     try {
-      const response = await fetch('http://localhost:8080/getData', {
+      const response = await fetch('http://localhost:8081/getData', {
         method: 'GET'
       });
       if (!response.ok) {
