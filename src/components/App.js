@@ -101,11 +101,11 @@ const App = () => {
         {getdata.map((key) => (
           <p><strong>seats:</strong><br></br>
           <strong>A1</strong>: {key.seats.A1>0 ? (key.seats.A1):(0)}<br></br>
-          <strong>A1</strong>: {key.seats.A2>0 ? (key.seats.A2):(0)}<br></br>
-          <strong>A1</strong>: {key.seats.A3>0 ? (key.seats.A3):(0)}<br></br>
-          <strong>A1</strong>: {key.seats.A4>0 ? (key.seats.A4):(0)}<br></br>
-          <strong>A1</strong>: {key.seats.D1>0 ? (key.seats.D1):(0)}<br></br>
-          <strong>A1</strong>: {key.seats.D2>0 ? (key.seats.D2):(0)}<br></br> 
+          <strong>A2</strong>: {key.seats.A2>0 ? (key.seats.A2):(0)}<br></br>
+          <strong>A3</strong>: {key.seats.A3>0 ? (key.seats.A3):(0)}<br></br>
+          <strong>A4</strong>: {key.seats.A4>0 ? (key.seats.A4):(0)}<br></br>
+          <strong>D1</strong>: {key.seats.D1>0 ? (key.seats.D1):(0)}<br></br>
+          <strong>D2</strong>: {key.seats.D2>0 ? (key.seats.D2):(0)}<br></br> 
           <strong>slot</strong>: {key.slot}<br></br>  
           <strong>movie</strong>: {key.movie}<br></br>  
           
