@@ -7,7 +7,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const { connection } = require("./connector");
 const cors = require('cors')
-app.use(cors())
+app.use(cors(
+   {
+      origin:["https://deploy-mern-ws.vercel.app"],
+      methods:["POST","GET"],
+      credentials:true
+   }
+));
+
 app.post('/insertData', async (req,res)=>{  
        const { selectedMovie,selectedSlot,seatData } = req.body;
        console.log(req.body);
